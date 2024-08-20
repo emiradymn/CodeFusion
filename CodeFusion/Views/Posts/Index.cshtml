@@ -1,0 +1,37 @@
+@model PostsViewModel
+
+<div class="row">
+    <div class="col-lg-9">
+        <div class="bg-white p-4">
+            <h1 class="h4 mb-4">Popüler Gönderiler</h1>
+            @foreach(var post in Model.Posts)
+            {
+            <div class="card bg-transparent border-0 mb-3">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="~/img/@post.Image" class="img-fluid rounded" alt="">
+                    </div>
+                    <div class="col-7">
+                        <h5><a href="/posts/details/@post.Url" class="btn-link fw-bold">@post.Title</a></h5>
+                        <p>@post.Description</p>
+                        <a href="#" class="badge bg-success bg-opacity-10 text-dark mb-2 fw-bold">Web Geliştirme</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            }
+
+            <div class="nav">
+                <ul class="pagination">
+                    <li class="page-item"><a href="" class="page-link">1</a></li>
+                    <li class="page-item"><a href="" class="page-link">2</a></li>
+                    <li class="page-item"><a href="" class="page-link">3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <vc:tags-menu></vc:tags-menu>
+        <vc:new-posts></vc:new-posts>
+    </div>
+</div>
