@@ -1,8 +1,8 @@
 Project Name: CodeFusion<br>
 Description: A lightweight question-and-answer blog application inspired by Stack Overflow, built with ASP.NET Core, Entity Framework, and MySQL. This application allows users to post questions, provide answers, and engage in discussions on various programming and tech-related topics.
 <br>
-Features:<br>
 
+Features:<br>
 Question Posting: Users can post questions on different topics, including tags and categories for better organization.<br>
 Answer Submission: Community members can provide answers, vote on the best solutions, and comment on existing answers.<br>
 User Authentication: Secure login and registration with role-based access for regular users and admins.<br>
